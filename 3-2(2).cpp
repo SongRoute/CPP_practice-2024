@@ -13,7 +13,16 @@ int main() {
 }
 
 int big(int a, int b, int c){
-    if(a>b && a>c) return a;
-    else if (b>c) return b;
-    else return c;
+    if(a>b && a>c) {
+        if(a<100) return a;
+        else return 100;
+    }
+    else if (b>c){
+        if(b<100) return b;
+        else return 100;
+    }
+    else{
+        if(c<100) return c;
+        else return 100;
+    }
 }
